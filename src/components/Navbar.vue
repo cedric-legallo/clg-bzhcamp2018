@@ -12,18 +12,18 @@
       </div>
     </div>
     <div class="navbar-menu" :class="{'is-active': isMenuActive, 'navbar-brand': !isMenuActive}" @click="hideMenu" v-if="$route.name !== 'home'">
-      <router-link class="navbar-item navbar-end" title="Catalogue" :class="{'is-active': $route.name === 'store'}">
+      <router-link :to="{name: 'store'}" class="navbar-item navbar-end" title="Catalogue" :class="{'is-active': $route.name === 'store'}">
         <font-awesome-icon :icon="getIcon('store')"/>
       </router-link>
       <div class="navbar-item hass-dropdown is-hoverable">
-        <router-link  class="navbar-link" title="Panier"  :class="{'is-active': $route.name === 'cart'}">
+        <router-link :to="{name: 'cart'}" class="navbar-link" title="Panier"  :class="{'is-active': $route.name === 'cart'}">
           <font-awesome-icon :icon="getIcon('shopping')"/>
           <div class="navbar-dropdown">
-            <router-link class="navbar-item" v-for="item of cart" :key="item.id" :title="'Détail du produit ' + item.name">
+            <router-link :to="{name: 'detail', params: {id:item.id}}" class="navbar-item" v-for="item of cart" :key="item.id" :title="'Détail du produit ' + item.name">
               {{ cartItem(item)}}
             </router-link>
             <hr class="navbar-divider">
-            <router-link class="navbar-item">
+            <router-link :to="{name: 'cart'}" class="navbar-item">
               Checkout
             </router-link>
           </div>
