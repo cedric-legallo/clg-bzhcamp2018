@@ -11,7 +11,6 @@ export default {
   name: 'bzh-hello',
   methods: {
     subscribe() {
-      console.log('hehe')
       SubscriptionSercice.getInstance().subscribeUser()
     }
   }
