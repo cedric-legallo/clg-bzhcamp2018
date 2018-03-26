@@ -4,8 +4,6 @@ import Hello from '@/components/Hello'
 import Store from '@/components/Store'
 import Detail from '@/components/Detail'
 import Cart from '@/components/Cart'
-import Help from '@/components/Help'
-import Enonce from '@/components/Enonce'
 
 Vue.use(Router)
 
@@ -14,10 +12,6 @@ export default new Router({
     path: '/',
     name: 'home',
     component: Hello
-  }, {
-    path: '/states',
-    name: 'states',
-    component: Enonce
   }, {
     path: '/store/:id',
     name: 'detail',
@@ -30,9 +24,5 @@ export default new Router({
     path: '/cart',
     name: 'cart',
     component: Cart
-  }, {
-    path: '/help',
-    name: 'help',
-    component: Help
   }]
 })

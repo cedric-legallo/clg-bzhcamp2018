@@ -8,8 +8,6 @@ import faSearch from '@fortawesome/fontawesome-free-solid/faSearch'
 import faPlus from '@fortawesome/fontawesome-free-solid/faPlus'
 import faMinus from '@fortawesome/fontawesome-free-solid/faMinus'
 import faTrash from '@fortawesome/fontawesome-free-solid/faTrash'
-import faQuestion from '@fortawesome/fontawesome-free-solid/faQuestion'
-import faStickyNote from '@fortawesome/fontawesome-free-solid/faStickyNote'
 
 export default {
   components: {
@@ -34,12 +32,7 @@ export default {
           return faMinus
         case 'delete':
           return faTrash
-        case 'help':
-          return faQuestion
-        case 'states':
-          return faStickyNote
       }
     }
   }
-
 }

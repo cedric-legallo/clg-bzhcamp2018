@@ -32,9 +32,12 @@
               installingWorker.onstatechange = function() {
                 switch (installingWorker.state) {
                   case 'installed':
-                    // TODO
-                    // Notifier l'utilisateur de l'upgrade
-                    // Lui suggérer de rafraichir l'application
+                    const title = 'Application mise à jour';
+                    const options = {
+                      body: 'Votre application viens d\'être mise à jour, merci de rafraichir votre page.'
+                    };
+
+                    registration.showNotification(title, options);
                     break;
 
                   case 'redundant':

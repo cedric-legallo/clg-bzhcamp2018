@@ -2,9 +2,6 @@
   <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <span class="navbar-item">Vue.js PWA</span>
-      <router-link :to="{name: 'states'}" class="navbar-item" title="Enoncé" :class="{'is-active': $route.name === 'states'}">
-        <font-awesome-icon :icon="getIcon('states')"/>
-      </router-link>
       <div class="navbar-burger" @click="toggleMenu" :class="{'is-active': isMenuActive}" v-if="$route.name !== 'home'">
         <span></span>
         <span></span>
@@ -29,9 +26,6 @@
           </div>
         </router-link>
       </div>
-    </router-link>
-    <router-link :to="{name: 'help'}" class="navbar-item" title="Aide"  :class="{'is-active': $route.name === 'help'}">
-      <font-awesome-icon :icon="getIcon('help')"/>
     </router-link>
     <router-link :to="{name: 'home'}" class="navbar-item" title="Déconnexion">
       <font-awesome-icon :icon="getIcon('logout')"/>
