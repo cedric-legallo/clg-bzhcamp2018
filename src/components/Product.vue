@@ -21,6 +21,9 @@ import CartService from '@/services/cart.service'
 export default {
   name: 'bzh-product',
   mixins: [FontAwesomeMixin],
+  props: {
+    product: Object
+  },
   computed: {
     name() {
       switch (this.product.type) {
@@ -40,16 +43,6 @@ export default {
   methods: {
     addToCart() {
       CartService.addItem(this.product)
-    }
-  },
-  data() {
-    return {
-      product: {
-        'name': 'Nature',
-        'price': 2,
-        'id': 1,
-        'type': 'galette'
-      }
     }
   }
 }

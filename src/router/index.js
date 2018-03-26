@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
-import Product from '@/components/Product'
+import Store from '@/components/Store'
 import Detail from '@/components/Detail'
 import Cart from '@/components/Cart'
 import Help from '@/components/Help'
@@ -25,7 +25,7 @@ export default new Router({
   }, {
     path: '/store',
     name: 'store',
-    component: Product
+    component: Store
   }, {
     path: '/cart',
     name: 'cart',
