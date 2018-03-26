@@ -5,7 +5,7 @@
       <tbody>
         <tr v-for="item of items" :key="item.id">
           <td>{{item.name}}</td>
-          <td><input type="text" :value="item.quantity"/></td>
+          <td><bzh-quantity :quantity="item.quantity" :name="item.name" @qty-updated="updateItemQuantity(item, $event)"></bzh-quantity></td>
           <td>{{item.price}} €</td>
           <td>
             <span>{{item.quantity * item.price}} €</span>
@@ -48,9 +48,13 @@
 <script>
 import FontAwesomeMixin from '@/mixins/FontAwesomeMixin'
 import CartService from '@/services/cart.service'
+import BzhQuantity from '@/components/Quantity'
 export default {
   name: 'bzh-cart',
   mixins: [FontAwesomeMixin],
+  components: {
+    BzhQuantity
+  },
   computed: {
     total() {
       return this.items.reduce((acc, it) => {
