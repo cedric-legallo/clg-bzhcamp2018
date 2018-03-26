@@ -56,7 +56,7 @@
       <li>Recevoir le product en props de la part de Store</li>
     </ol>
     <ol :class="{'hidden': tab !== 4}">
-      <li>builder l'application : npm run build</li>
+      <li>builder l'application : npm run serve:dist</li>
       <li>accéder à http://localhost:8000, félicitations c'est une PWA</li>
       <li>Consulter manifest.json</li>
       <li>Remplacer le logo Vue par le logo Breizhcamp</li>
