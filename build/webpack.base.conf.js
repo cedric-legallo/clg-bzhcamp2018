@@ -11,7 +11,8 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    app: './src/main.js',
+    messaging: './src/messaging.js'
   },
   output: {
     path: config.build.assetsRoot,

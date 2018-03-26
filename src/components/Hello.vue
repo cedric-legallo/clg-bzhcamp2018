@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @click="subscribe">
     <h1>Bienvenue dans votre magasin de Galettes/Saucisses ! </h1>
     <router-link :to="{name: 'states'}" class="button is-primary">Entrer</router-link>
   </div>
@@ -11,6 +11,7 @@ export default {
   name: 'bzh-hello',
   methods: {
     subscribe() {
+      console.log('hehe')
       SubscriptionSercice.getInstance().subscribeUser()
     }
   }

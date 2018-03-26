@@ -73,7 +73,8 @@ const webpackConfig = merge(baseWebpackConfig, {
     // split vendor js into its own file
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
-      minChunks: function (module, count) {
+      chunks: ['app'],
+      minChunks: function(module, count) {
         // any required modules inside node_modules are extracted to vendor
         return (
           module.resource &&
@@ -103,6 +104,9 @@ const webpackConfig = merge(baseWebpackConfig, {
       cacheId: 'clg-bzhcamp2018',
       filename: 'service-worker.js',
       staticFileGlobs: ['dist/**/*.{js,html,css,ttf}'],
+      importScripts: [{
+        chunkName: 'messaging'
+      }],
       minify: true,
       stripPrefix: 'dist/'
     })
