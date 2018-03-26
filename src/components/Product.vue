@@ -1,12 +1,57 @@
 <template>
   <div class="flex">
-    Product
+    <router-link :to="{name: 'detail', params: {id:product.id}}" class="flex  auto">
+      <div class="square" :class="product.type"></div>
+      <div class="main auto pad">
+        {{ name }}
+      </div>
+      <span class="pad">{{ price }}</span>
+    </router-link>
+    <button class="button is-primary" title="Ajouter au panier"
+      @click.stop="addToCart">
+      <font-awesome-icon :icon="getIcon('addToCart')"/>
+    </button>
   </div>
 </template>
 
 <script>
+import FontAwesomeMixin from '@/mixins/FontAwesomeMixin'
+import CartService from '@/services/cart.service'
+
 export default {
-  name: 'bzh-product'
+  name: 'bzh-product',
+  mixins: [FontAwesomeMixin],
+  computed: {
+    name() {
+      switch (this.product.type) {
+        case 'galette':
+          return `Galette ${this.product.name}`
+        case 'boisson':
+          return `${this.product.name} (Bouteille)`
+        case 'accompagnement':
+        case 'dessert':
+          return `${this.product.name}`
+      }
+    },
+    price() {
+      return `${this.product.price} €`
+    }
+  },
+  methods: {
+    addToCart() {
+      CartService.addItem(this.product)
+    }
+  },
+  data() {
+    return {
+      product: {
+        'name': 'Nature',
+        'price': 2,
+        'id': 1,
+        'type': 'galette'
+      }
+    }
+  }
 }
 </script>
 
