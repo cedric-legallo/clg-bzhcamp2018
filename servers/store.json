@@ -1,0 +1,108 @@
+{
+  "products": [
+  {
+    "name": "Nature",
+    "price": 2,
+    "id": 1,
+    "type": "galette",
+    "description": "La galette-saucisse est un en-cas composé d'une saucisse de porc grillée, roulée dans une galette de sarrasin froide. Elle est principalement consommée en Haute-Bretagne, plus précisément en Ille-et-Vilaine et dans certaines parties de ses départements limitrophes : les Côtes-d'Armor, le Morbihan, la Loire-Atlantique, la Mayenne et la Manche.<br/><br/>Créée et popularisée au cours du xixe siècle, elle réunit deux produits de la gastronomie bretonne. Le sarrasin (ou « blé noir ») est introduit dans les systèmes agraires du Grand Ouest vers la seconde moitié du xve siècle. Cuisiné sous forme de galettes, de bouillie ou parfois de pain, le sarrasin est très largement cultivé dans les campagnes bretonnes et bas-normandes jusqu'au xxe siècle. Substitut au pain pour les pauvres, son goût très prononcé est adouci par divers accompagnements. Parmi ces derniers, les charcuteries, dont la saucisse de porc, font partie des spécialités de la région rennaise.<br/><br/>La galette-saucisse devient, dès lors, un en-cas populaire, consommé debout et à la main, à l'occasion des fêtes, des marchés ou des événements sportifs. Elle est ainsi fortement associée au club de football du Stade rennais, et devient l'un des emblèmes de la gastronomie populaire de Haute-Bretagne."
+  },
+  {
+    "name": "Moutarde",
+    "price": 2.5,
+    "id": 2,
+    "type": "galette",
+    "description": "La moutarde (du latin mustum ardens, « moût ardent ») est un condiment préparé à partir des graines d'une plante de la famille des Brassicaceae, appelée aussi moutarde. Ces graines sont petites, d'un diamètre approximatif de 1 mm. Leur coloration varie entre le blanc jaunâtre et le noir selon les espèces et participent à la teinte du condiment.<br/><br/>La moutarde est répandue dans plusieurs cuisines régionales et continentales. Sur l'ensemble des épices et condiments, la moutarde est le troisième produit le plus consommé dans le monde après le sel et le poivre. Le De re coquinaria d’Apicius du ive siècle est le premier manuscrit culinaire connu à transmettre sa recette. En Inde, les graines de moutarde sont souvent cuites entières pour donner une saveur particulière à l'huile. L'huile extraite des graines est utilisée pour la cuisine au Bengale.<br/><br/>En France, le condiment connu sous le nom de moutarde est constitué des graines (en particulier les blanches), souvent réduites en farine et mélangées à du verjus. D'autres ingrédients peuvent être ajoutés, par exemple du sucre, du miel, du vinaigre, du vin ou du lait. La liste des ingrédients autorisés en France figure dans le décret 2000-658. Les graines entières peuvent être submergées de liquide avant le meulage si l'on veut produire de la moutarde en grain dite à l'ancienne."
+  },
+  {
+    "name": "Ketchup",
+    "price": 2.5,
+    "id": 3,
+    "type": "galette",
+    "description": "Le ketchup est un condiment populaire, habituellement élaboré à partir de sauce tomate, de vinaigre et de sucre."
+  },
+  {
+    "name": "Mayonnaise",
+    "price": 2.5,
+    "id": 4,
+    "type": "galette",
+    "description": "La mayonnaise est une sauce froide à base d'huile émulsionnée dans un mélange de jaune d'œuf et de vinaigre, ou de jus de citron."
+  },
+  {
+    "name": "Petite Frites",
+    "price": 1.5,
+    "id": 5,
+    "type": "accompagnement",
+    "description": "La frite est un bâtonnet de pomme de terre cuit dans une graisse animale ou une huile végétale (friture). Les appellations « pomme frite » et « patate frite » sont utilisées indifféremment pour ce bâtonnet, pour une tranche ou pour une rondelle du même végétal cuit de cette façon.<br/><br/>La cuisson à la poêle ou en marmite tend à disparaître dans les ménages au xxe siècle au profit d'un appareil électroménager appelé friteuse. Vers 2010, un panier de cuisson permettant la cuisson au four avec un minimum de matière grasse apparait dans le commerce pour une cuisson annoncée comme « plus diététique ». Il existe aussi des frites dans un emballage spécial pour cuisson au four à micro-ondes.<br/><br/>Au début du xxie siècle, la plupart des frites consommées dans le monde sont des frites surgelées fabriquées industriellement, commercialisées soit directement dans la grande distribution ou les chaînes spécialisées dans les produits surgelés, soit dans les sandwicheries (en particulier dans les chaînes de restauration rapide)."
+  },
+  {
+    "name": "Moyenne Frites",
+    "price": 2,
+    "id": 6,
+    "type": "accompagnement",
+    "description": "La frite est un bâtonnet de pomme de terre cuit dans une graisse animale ou une huile végétale (friture). Les appellations « pomme frite » et « patate frite » sont utilisées indifféremment pour ce bâtonnet, pour une tranche ou pour une rondelle du même végétal cuit de cette façon.<br/><br/>La cuisson à la poêle ou en marmite tend à disparaître dans les ménages au xxe siècle au profit d'un appareil électroménager appelé friteuse. Vers 2010, un panier de cuisson permettant la cuisson au four avec un minimum de matière grasse apparait dans le commerce pour une cuisson annoncée comme « plus diététique ». Il existe aussi des frites dans un emballage spécial pour cuisson au four à micro-ondes.<br/><br/>Au début du xxie siècle, la plupart des frites consommées dans le monde sont des frites surgelées fabriquées industriellement, commercialisées soit directement dans la grande distribution ou les chaînes spécialisées dans les produits surgelés, soit dans les sandwicheries (en particulier dans les chaînes de restauration rapide)."
+  },
+  {
+    "name": "Grande Frites",
+    "price": 2.5,
+    "id": 7,
+    "type": "accompagnement",
+    "description": "La frite est un bâtonnet de pomme de terre cuit dans une graisse animale ou une huile végétale (friture). Les appellations « pomme frite » et « patate frite » sont utilisées indifféremment pour ce bâtonnet, pour une tranche ou pour une rondelle du même végétal cuit de cette façon.<br/><br/>La cuisson à la poêle ou en marmite tend à disparaître dans les ménages au xxe siècle au profit d'un appareil électroménager appelé friteuse. Vers 2010, un panier de cuisson permettant la cuisson au four avec un minimum de matière grasse apparait dans le commerce pour une cuisson annoncée comme « plus diététique ». Il existe aussi des frites dans un emballage spécial pour cuisson au four à micro-ondes.<br/><br/>Au début du xxie siècle, la plupart des frites consommées dans le monde sont des frites surgelées fabriquées industriellement, commercialisées soit directement dans la grande distribution ou les chaînes spécialisées dans les produits surgelés, soit dans les sandwicheries (en particulier dans les chaînes de restauration rapide)."
+  },
+  {
+    "name": "Limonade",
+    "price": 2,
+    "id": 8,
+    "type": "boisson",
+    "description": "La limonade est une boisson froide constituée de jus de citron, d'eau et de sucre. Elle peut être gazeuse ou non suivant le pays où elle est consommée."
+  },
+  {
+    "name": "Eau",
+    "price": 2,
+    "id": 9,
+    "type": "boisson",
+    "description": "L'eau est une substance chimique constituée de molécules H2O. Ce composé est très stable et néanmoins très réactif. Dans de nombreux contextes le terme eau est employé au sens restreint d'eau à l'état liquide, et il est également employé pour désigner une solution aqueuse diluée (eau douce, eau potable, eau de mer, eau de chaux, etc.). L'eau liquide est un excellent solvant.<br/><br/>L'eau est ubiquitaire sur Terre et dans l'atmosphère, sous ses trois états, solide (glace), liquide et gazeux (vapeur d'eau). L'eau extraterrestre est également abondante, sous forme de vapeur d'eau dans l'espace et sous forme condensée (solide ou liquide) à la surface, près de la surface ou à l'intérieur d'un grand nombre d'objets célestes.<br/><br/>L'eau est un constituant biologique important, et l'eau liquide est essentielle pour tous les organismes vivants connus. Compte tenu de son caractère vital, de son importance dans l'économie et de son inégale répartition sur Terre, l'eau est une ressource naturelle dont la gestion est l'objet de forts enjeux géopolitiques."
+  },
+  {
+    "name": "Jus d'orange",
+    "price": 2,
+    "id": 10,
+    "type": "boisson",
+    "description": "Le jus d'orange est une boisson préparée à partir d'oranges pressées. Il faut 2 à 3 kg d'oranges pour faire 1 litre de jus d'orange « 100 % pur jus »."
+  },
+  {
+    "name": "Jus de pomme",
+    "price": 2,
+    "id": 11,
+    "type": "boisson",
+    "description": "Le jus de pomme est une boisson produite par l'extraction de jus par pression à froid ou à chaud de pommes."
+  },
+  {
+    "name": "Salade verte",
+    "price": 2,
+    "id": 12,
+    "type": "accompagnement",
+    "description": "La salade est un terme générique désignant en jardinage et horticulture diverses sortes de feuilles, c'est-à-dire de plantes potagères dont les feuilles, consommées crues, entrent dans la composition d'un mets froid dont elles ont pris le nom, la « salade », sous-entendu « salade verte ». Les salades sont des plantes angiospermes.<br/><br/>Certaines se repiquent (chicorée, laitue), d'autres (mâche, pissenlit, roquette, pourpier) se sèment."
+  },
+  {
+    "name": "Muffin",
+    "price": 2,
+    "id": 13,
+    "type": "dessert",
+    "description": "Les muffins sont de petits gâteaux individuels s'apparentant aux madeleines. Apparus au pays de Galles aux alentours du xie siècle, ils sont très répandus dans les pays anglo-saxons, principalement aux États-Unis. Le principe caractéristique de fabrication des muffins consiste à préparer le mélange des ingrédients liquides et celui des ingrédients secs séparément, puis à mélanger rapidement et grossièrement les deux préparations.<br/><br/>Les muffins sont traditionnellement sucrés. On peut les retrouver au chocolat (avec des pépites de chocolat) ou nature, mais il existe de nombreuses autres variétés : fraise, banane, framboise, orange, vanille, myrtille ou bleuets, etc.<br/><br/>Il existe également des muffins salés, les English muffins ou muffins anglais (au Canada), ressemblant à des sortes de petites crêpes très épaisses, faits à partir de pâte levée. Ces muffins salés sont quelquefois faits avec de la farine complète. Ils sont notamment employés comme base de la préparation des « œufs bénédicte »."
+  },
+  {
+    "name": "Banane",
+    "price": 2,
+    "id": 14,
+    "type": "dessert",
+    "description": "La banane est le fruit ou la baie dérivant de l’inflorescence du bananier. Les bananes sont des fruits très généralement stériles issus de variétés domestiquées. Seuls les fruits des bananiers sauvages et de quelques cultivars domestiques contiennent des graines. Les bananes sont généralement jaunes avec des taches brunâtres lorsqu'elles sont mûres et vertes quand elles ne le sont pas.<br/><br/>Les bananes constituent un élément essentiel du régime alimentaire dans certaines régions."
+  },
+  {
+    "name": "Yaourt",
+    "price": 2,
+    "id": 15,
+    "type": "dessert",
+    "description": "Le yaourt, yahourt, yogourt ou yoghourt, est un lait fermenté par le développement des seules bactéries lactiques thermophiles Lactobacillus delbrueckii subsp. bulgaricus et Streptococcus thermophilus qui doivent être ensemencées simultanément et se trouver vivantes dans le produit fini. C'est la définition officielle française depuis 1963 précisée par le décret de 1988. D'un pays à l'autre, les législations peuvent cependant différer.<br/><br/>Il fait partie des nombreux types de laits fermentés, et sont introduits par les Turcs Seldjoukides dès le début du xie siècle au Moyen-Orient, puis dans les Balkans par les Ottomans dès le xive siècle. Très populaire encore aujourd'hui, il est fait maison par de nombreuses familles dans les pays turcophones (Turquie, Azerbaïdjan, Kazakhstan...), dans les Balkans (Bulgarie, Roumanie, Grèce...) mais aussi au Proche-Orient (Syrie, Irak, Liban...). Sa standardisation et sa production industrielle dans la seconde moitié du xxe siècle, en ont fait un produit de grande consommation dans de nombreux pays du monde.<br/><br/>Dans les pays développés, ce mets naturellement acide est souvent additionné de sucre et de fruits pour être consommé en dessert ou au petit-déjeuner."
+  }]
+}
