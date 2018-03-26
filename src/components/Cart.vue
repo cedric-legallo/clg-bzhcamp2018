@@ -51,9 +51,6 @@ import CartService from '@/services/cart.service'
 export default {
   name: 'bzh-cart',
   mixins: [FontAwesomeMixin],
-  components: {
-    BzhQuantity
-  },
   computed: {
     total() {
       return this.items.reduce((acc, it) => {
