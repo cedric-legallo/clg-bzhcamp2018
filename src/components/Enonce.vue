@@ -85,7 +85,7 @@
       <span>Modifier build/webpack.base.conf.js</span>
       <li>Ajouter messaging.js en entry à coté de app</li>
       <span>Modifier build/webpack.prod.conf.js</span>
-      <li>Exlucre messaging.js de l'action webpack.optimize.CommonsChunkPlugin</li>
+      <li>Exclure messaging.js de l'action webpack.optimize.CommonsChunkPlugin</li>
       <code>chunks: ['app'],</code>
       <li>Modifier SWPrecacheWebpackPlugin dans build/webpack.prod.conf.js : </li>
       <code><br/>
