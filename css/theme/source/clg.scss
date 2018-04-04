@@ -1,0 +1,417 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+// Include theme-specific fonts
+@import url(fonts.css);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 32px;
+$mainFont: 'Segoe',
+Helvetica,
+sans-serif;
+$headingFont: 'Segoe',
+Helvetica,
+sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15%);
+$selectionBackgroundColor: lighten( $linkColor, 25%);
+
+$heading1Size: 2em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+$clg-blue: #3949AB;
+$clg-light-blue: #039BE5;
+$clg-green: #00897B;
+$clg-gray: #757575;
+$clg-error: #EF5350;
+$clg-info: #42A5F5;
+$clg-warn: #FFA726;
+$clg-success: #9CCC65;
+
+.print-pdf {
+ .noprint {
+  display: none !important;
+ }
+ iframe {
+  width: 100%;
+  height: 600px;
+ }
+ .page-break {
+  page-break-before: always;
+ }
+}
+
+.reveal {
+ .fa {
+  font-family: 'FontAwesome';
+ }
+
+ p {
+  display: flex;
+ }
+
+ .slides {
+  margin: 0 auto;
+  .print-pdf & {
+   h1 {
+    font-size: 1.5em;
+   }
+   section.noprint {
+    display: none !important;
+   }
+  }
+ }
+
+ .strike {
+  text-decoration: line-through;
+ }
+
+ .citation {
+  font-family: 'Dancing Script', sans-serif !important;
+  font-size: 1.5em !important;
+  padding: 2em;
+ }
+
+ .center {
+  margin: auto;
+ }
+
+}
+
+section.has-dark-background {
+ &,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+  color: $backgroundColor;
+ }
+}
+
+@mixin titre() {
+ text-align: left;
+ h1 {
+  text-align: center;
+ }
+
+ li {
+  list-style-type: none;
+ }
+}
+
+@mixin partie($color) {
+ li {
+  list-style-type: disc;
+ }
+
+ &,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+  color: $color;
+ }
+
+ .end {
+  &,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+   color: $backgroundColor;
+  }
+ }
+
+ .timeline ul li {
+  list-style-type: none;
+  background: $color;
+  &:nth-child(odd) div::before {
+   border-color: transparent $color transparent transparent;
+  }
+  &:nth-child(even) div::before {
+   border-color: transparent transparent transparent $color;
+  }
+ }
+}
+
+.reveal section.centerTable table th:not(:first-child),
+.reveal table td:not(:first-child) {
+ text-align: center;
+}
+
+.reveal section.noMarginImg img {
+ margin: 0;
+}
+
+section.blue {
+ @include titre();
+
+ &+section.blue {
+  @include partie($clg-blue);
+ }
+
+ .reveal & img {
+  border: none;
+ }
+}
+
+section.lightblue {
+ @include titre();
+
+ &+section.lightblue {
+  @include partie($clg-light-blue);
+ }
+
+ .reveal & img {
+  border: none;
+ }
+}
+
+section.green {
+ @include titre();
+
+ &+section.green {
+  @include partie($clg-green);
+ }
+ .reveal & img {
+  border: none;
+ }
+}
+
+section.gray {
+ @include titre();
+
+ &+section.gray {
+  @include partie($clg-gray);
+ }
+ .reveal & img {
+  border: none;
+ }
+}
+
+.backgrounds .blue,
+.backgrounds .blue .end {
+ background-color: $clg-blue;
+
+ &+.blue {
+  background-color: $backgroundColor;
+ }
+}
+
+.backgrounds .lightblue,
+.backgrounds .lightblue .end {
+ background-color: $clg-light-blue;
+
+ &+.lightblue {
+  background-color: $backgroundColor;
+ }
+}
+
+
+.backgrounds .green,
+.backgrounds .green .end {
+ background-color: $clg-green;
+
+ &+.green {
+  background-color: $backgroundColor;
+ }
+}
+
+.backgrounds .gray,
+.backgrounds .gray .end {
+ background-color: $clg-gray;
+
+ &+.gray {
+  background-color: $backgroundColor;
+ }
+}
+
+
+.reveal.has-dark-background {
+ .progress span {
+  background: $backgroundColor;
+ }
+ .controls {
+  .navigate-left.enabled {
+   border-right-color: $backgroundColor;
+  }
+  .navigate-right.enabled {
+   border-left-color: $backgroundColor;
+  }
+  .navigate-up.enabled {
+   border-bottom-color: $backgroundColor;
+  }
+  .navigate-down.enabled {
+   border-up-color: $backgroundColor;
+  }
+ }
+}
+
+.error,
+.info,
+.warn,
+.success {
+ color: #000;
+}
+
+.error {
+ background-color: $clg-error;
+}
+
+.info {
+ background-color: $clg-info;
+}
+
+.warn {
+ background-color: $clg-warn;
+}
+
+.success {
+ background-color: $clg-success;
+}
+
+.none {
+ background: $backgroundColor;
+ color: $backgroundColor;
+}
+
+.reveal.has-light-background {
+ .progress span {
+  background: $clg-blue;
+ }
+}
+
+.line {
+ display: block;
+}
+
+.line.blur {
+ filter: blur(2px);
+ -webkit-filter: blur(2px);
+}
+
+iframe {
+ width: 100%;
+ height: 800px;
+}
+
+// Timeline
+.reveal {
+ .timeline ul li {
+  &:first-child {
+   padding-top: -15px;
+  }
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 0;
+ }
+
+ .timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 40px;
+  border-radius: 50%;
+  background: inherit;
+ }
+
+ .timeline ul li div {
+  position: relative;
+  bottom: 0;
+  top: 15px;
+  width: 400px;
+  padding: 15px;
+  font-size: 0.8em;
+ }
+
+ .timeline ul li time {
+  position: absolute;
+  top: 15px;
+  color: #FFF;
+  z-index: 1;
+  font-weight: bold;
+ }
+
+ .timeline ul li div::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+ }
+
+ .timeline ul li:nth-child(odd) div {
+  left: 65px;
+ }
+
+ .timeline ul li time:nth-child(odd) {
+  left: -90px;
+ }
+
+ .timeline ul li:nth-child(odd) div::before {
+  left: -10px;
+  top: 25px;
+  border-width: 8px 16px 8px 0;
+ }
+
+ .timeline ul li:nth-child(even) div {
+  left: -485px;
+  text-align: right;
+ }
+
+ .timeline ul li:nth-child(even) time {
+  left: 460px;
+ }
+
+ .timeline ul li:nth-child(even) div::before {
+  right: -5px;
+  top: 30px;
+  border-width: 8px 0 8px 16px;
+ }
+}
+
+.reveal .tp {
+ background-image: url('../../img/tp.png');
+ background-repeat: no-repeat;
+ background-size: contain;
+ height: 50px;
+ width: 50px;
+ display: inline-block;
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ padding-left: 2em;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
